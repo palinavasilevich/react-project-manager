@@ -113,7 +113,9 @@ function App() {
       />
       <main className="w-full flex justify-center items-center">
         {!projectsState.selectedProjectId && (
-          <NewProjectForm onAddNewProject={handleAddNewProject} />
+          <div className="bg-[#F2EAE5]/50 rounded-md shadow-sm">
+            <NewProjectForm onAddNewProject={handleAddNewProject} />
+          </div>
         )}
 
         {projectsState.selectedProjectId && selectedProject && (
